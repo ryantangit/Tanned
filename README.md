@@ -1,2 +1,19 @@
-This will be the first of many iterations of Tanned. The first iteration of Tanned will be used to code up a native implementation of my project.
-Once I feel comfortable with the basics of web development, I will then take a look at furthering the project with frameworks.
+#Tan's Pomodoro
+Tried the Pomodoro Technique and really liked it. Think this technique will be the basis for Tanned. Maybe like Tan's Pomodoro or something.
+
+Using this project to really learn about web development. Hobby project.
+
+#How to Use
+`firefox Tanned/src/index.html`
+
+#Todo
+>Add functionality for timer.
+>Add functionality for audio after timer.
+
+#Changelog:
+
+##12/13/2023
+- Redirected project to focus on Pomodoro
+- Rudimentary list implemented
+
+

@@ -8,21 +8,31 @@
   <meta name="viewport" content=
   "width=device-width, initial-scale=1">
   <link rel="stylesheet" href="">
-  <script src=""></script>
 </head>
 <body>
   <div class="introduction">
-    <h1>Tanned</h1>
+    <h1>Tan's Pomodoro</h1>
     <p>Productivity in a gamified way.</p>
+	
+	<div class="sessionConfiguration">
+<p id="sessionDescription">Each session comprises of one hour. Input the work duration and the break duration will be calculated from the work duration.</p>
+	<label for="numOfSessions">Number of Sessions</label>
+	<input type="number" id="numOfSessions" min="1" max="24">
+	<label for="sessionMinutes">Session Minutes</label>
+	<input type="number" id="sessionMinutes" min="0" max="59">
+	<label for="sessionSeconds">Session Seconds</label>
+	<input type="number" id="sessionSeconds" min="1" max="59">
+	<button type="button" id="sessionGenerateButton"> Generate </button>
+	</div>
     <div class="scoreboard">
-      <h3>Scoreboard</h3>
-      <h4>Current points:</h4>
+	  <h4>Sessions Completed: </h4><h5 id="currentSessionsDone">0</h5>
     </div>
-    <div class="tasks">
-      <ul class="task-list">
-        <li>Test</li>
-      </ul><button type="button">Add New Tasks</button>
+    <div class="sessions">
+		<h3> Sessions </h3>
+      <ul id="sessionList">
+      </ul>
     </div>
   </div>
 </body>
+<script src="../javascript/session.js"></script>
 </html>
