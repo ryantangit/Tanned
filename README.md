@@ -7,8 +7,8 @@ Using this project to really learn about web development. Hobby project.
 `firefox Tanned/src/index.html`
 
 # Todo
->Add functionality for timer.
->Add functionality for audio after timer.
+- Add functionality for timer.
+- Add functionality for audio after timer.
 
 # Changelog:
 
