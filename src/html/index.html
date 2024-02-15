@@ -14,8 +14,7 @@
     <h1>Tan's Pomodoro</h1>
     <p>Productivity in a gamified way.</p>
     <div class="sessionConfiguration">
-      <p id="sessionDescription">Each session comprises of one
-      hour. Input the work duration and the break duration will be
+      <p id="sessionDescription"> Input the work duration and the break duration will be
       calculated from the work duration.</p><label for=
       "numOfSessions">Number of Sessions</label> <input type=
       "number" value="1" id="numOfSessions" min="1" max="24"> <label for=
@@ -24,6 +23,8 @@
       "sessionSeconds">Session Seconds</label> <input type="number"
       id="sessionSeconds" value="0" min="0" max="59"> <button type="button"
       id="sessionGenerateButton">Generate</button>
+	  <input type="number" id="breakMinutes" value="0" min="0" max="59"> <label for="breakMinutes">Break Minutes</label>
+	  <input type="number" id="breakSeconds" value="0" min="0" max="59"> <label for="breakSeconds">Break Seconds</label>
     </div>
     <div class="scoreboard">
       <h4>Sessions:</h4>

@@ -1,7 +1,7 @@
 const sessionButton = document.getElementById("sessionGenerateButton");
 sessionButton.addEventListener("click", generate);
 
-function generate(){
+function generate() {
 	const sessionList = document.getElementById("sessionList");
 	const sessions = document.getElementById("numOfSessions");
 	const sessionMinutes = document.getElementById("sessionMinutes");
@@ -10,7 +10,7 @@ function generate(){
 		alert("At least one second per session, come on now.");
 		return;
 	}
-	for (let i = 0; i < sessions.value; i++){
+	for (let i = 0; i < sessions.value; i++) {
 		const newSession = document.createElement("li");
 		newSession.className = "session";
 		const newSessionTitle = document.createTextNode("Pomodoro " + i.toString());
@@ -36,10 +36,7 @@ function Task(){
 }
 
 function clearTask(thisDiv){
-	const sessionsDone = document.getElementById("currentSessionsDone");
-	let temp = parseInt(sessionsDone.innerHTML, 10);
-	temp += 1;	
-	sessionsDone.innerHTML = temp;
+	
 	thisDiv.style.display = "none";
 }
 
@@ -61,9 +58,12 @@ function startTask(thisDiv){
 		timer.innerHTML = ("00"+minLeft).slice(-2)+":"+("00"+secLeft).slice(-2);
 		if (timeLeft == 0){
 			clearInterval(countDown);
+			const sessionsDone = document.getElementById("currentSessionsDone");
+			let temp = parseInt(sessionsDone.innerHTML, 10);
+			temp += 1;	
+			sessionsDone.innerHTML = temp;
 			alert("Session Completed");
 		}
-	}, 1000);
-
+	}, 1000);		
 }
 
